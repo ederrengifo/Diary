@@ -1,0 +1,17 @@
+<p id="notice"><%= notice %></p>
+
+<h1 class="main-title">Hello Anna</h1>
+
+<% @timelines.each do |timeline| %>
+
+<div class="entrie">
+  <div class="entrie-head">
+    <div class="time"><%= timeline.created_at.to_formatted_s(:short) %></div>
+    <div class="title"><%= timeline.title %></div>
+  </div>
+  <div class="entrie-content"><%= timeline.content %></div>
+</div>
+
+<% end %>
+
+<br>

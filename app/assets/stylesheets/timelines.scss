@@ -1,0 +1,50 @@
+// Place all the styles related to the Timelines controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+body {width: 100%; text-align: center; font-family: 'Droid Serif',serif; color: #222;}
+
+.wrapper {
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.main-title {
+  font-family: 'Lato', Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #999;
+  margin-bottom: 20px;
+}
+
+.entrie {
+  border-top: 1px solid #f4f4f4;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.entrie-head {
+  margin-bottom: 30px;
+}
+
+.time {
+  font-family: 'Lato', Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  color: #999;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-family: 'Lato', Helvetica, sans-serif;
+  font-weight: 900;
+  font-size: 34px;
+  color: #222;
+  line-height: 40px;
+}
+
+.entrie-content {
+  color: #444;
+  font-size: 16px;
+  line-height: 26px;
+}
