@@ -11,19 +11,30 @@
   </head>
 
   <body>
-    <script type="text/javascript">
-      var password = "arequipa";
-      var x = prompt("Please, ingresa la contraseña"," ");
-        if (x.toLowerCase() == password) {
-          window.location = "timelines";
-        }
-        else {
-          window.location = "no_passwords"
-        }
-    </script>
 
+<script>
+function passWord() {
+var testV = 1;
+var pass1 = prompt('Por favor, ingresa tu contraseña',' ');
+while (testV < 3) {
+if (!pass1)
+history.go(-1);
+if (pass1.toLowerCase() == "arequipa") {
+alert('Contraseña Correcta!');
+window.open('timelines');
+break;
+}
+testV+=1;
+var pass1 =
+prompt('Contraseña incorrecta, por favor intenta de nuevo','password');
+}
+if (pass1.toLowerCase()!="password" & testV ==3)
+history.go(-1);
+return " ";
+}
+</script>
 
-    <div class="wrapper"
+    <div class="wrapper">
     <%= yield %>
     </div>
   </body>
