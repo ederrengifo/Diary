@@ -1,7 +1,7 @@
 // Place all the styles related to the Timelines controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-body {width: 100%; text-align: center; font-family: 'Droid Serif',serif; color: #222;}
+body {width: 100%; text-align: center; font-family: 'Domine',serif; color: #222;}
 
 .wrapper {
   max-width: 720px;
@@ -10,8 +10,8 @@ body {width: 100%; text-align: center; font-family: 'Droid Serif',serif; color: 
 }
 
 .main-title {
-  font-family: 'Lato', Helvetica, sans-serif;
-  font-weight: 700;
+  font-family: 'Raleway', Helvetica, sans-serif;
+  font-weight: 400;
   font-size: 16px;
   color: #999;
   margin-bottom: 20px;
@@ -28,7 +28,7 @@ body {width: 100%; text-align: center; font-family: 'Droid Serif',serif; color: 
 }
 
 .time {
-  font-family: 'Lato', Helvetica, sans-serif;
+  font-family: 'Raleway', Helvetica, sans-serif;
   font-weight: 400;
   font-size: 13px;
   color: #999;
@@ -36,8 +36,8 @@ body {width: 100%; text-align: center; font-family: 'Droid Serif',serif; color: 
 }
 
 .title {
-  font-family: 'Lato', Helvetica, sans-serif;
-  font-weight: 900;
+  font-family: 'Raleway', Helvetica, sans-serif;
+  font-weight: 800;
   font-size: 34px;
   color: #222;
   line-height: 40px;
@@ -45,8 +45,8 @@ body {width: 100%; text-align: center; font-family: 'Droid Serif',serif; color: 
 
 .entrie-content {
   color: #444;
-  font-size: 16px;
-  line-height: 26px;
+  font-size: 17px;
+  line-height: 30px;
 }
 
 .field {
