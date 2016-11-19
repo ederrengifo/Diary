@@ -11,6 +11,18 @@
   </head>
 
   <body>
+    <script type="text/javascript">
+      var password = "arequipa";
+      var x = prompt("Please, ingresa la contraseña"," ");
+        if (x.toLowerCase() == password) {
+          window.location = "timelines";
+        }
+        else {
+          window.location = "no_passwords"
+        }
+    </script>
+
+
     <div class="wrapper"
     <%= yield %>
     </div>

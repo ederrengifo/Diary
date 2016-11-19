@@ -1,5 +1,5 @@
 class TimelinesController < ApplicationController
-  before_action :set_timeline, only: [:show, :edit, :update, :destroy]
+  before_action :set_timeline, only: [:show, :edit, :update, :destroy, :noPassword]
 
   # GET /timelines
   # GET /timelines.json
@@ -19,6 +19,9 @@ class TimelinesController < ApplicationController
 
   # GET /timelines/1/edit
   def edit
+  end
+
+  def noPassword
   end
 
   # POST /timelines

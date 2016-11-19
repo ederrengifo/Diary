@@ -1,0 +1,1 @@
+json.partial! "no_passwords/no_password", no_password: @no_password

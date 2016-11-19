@@ -1,0 +1,2 @@
+class NoPassword < ApplicationRecord
+end

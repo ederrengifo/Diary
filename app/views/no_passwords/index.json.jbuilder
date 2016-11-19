@@ -1,0 +1,1 @@
+json.array! @no_passwords, partial: 'no_passwords/no_password', as: :no_password

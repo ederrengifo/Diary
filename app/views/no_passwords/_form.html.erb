@@ -1,0 +1,22 @@
+<%= form_for(no_password) do |f| %>
+  <% if no_password.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(no_password.errors.count, "error") %> prohibited this no_password from being saved:</h2>
+
+      <ul>
+      <% no_password.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :text %>
+    <%= f.text_field :text %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
