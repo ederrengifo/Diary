@@ -1,7 +1,16 @@
 // Place all the styles related to the Timelines controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-body {max-width: 100%; text-align: center; font-family: 'Space Mono',serif; color: #222; min-width: 320px; padding-left: 10px; padding-right: 10px;}
+body {max-width: 100%; text-align: center; font-family: 'Merriweather',serif; color: #222; min-width: 320px; padding-left: 10px; padding-right: 10px;}
+
+a {
+  color: #3F51B5;
+  text-decoration: none;
+}
+a:hover {
+  color: #3F51B5;
+  text-decoration: underline;
+}
 
 .wrapper {
   max-width: 720px;
@@ -48,12 +57,83 @@ body {max-width: 100%; text-align: center; font-family: 'Space Mono',serif; colo
   color: #444;
   font-size: 17px;
   line-height: 30px;
+  font-weight: 300;
 }
 
 .field {
   width: 620px;
 }
+
+.add-entrie {
+  font-family: 'Rubik', Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  position: fixed;
+  top: 32px;
+  right: 5%;
+  width: 100%;
+  text-align: right;
+  a {
+    color: #222;
+  }
+  a:hover {
+    color: #3F51B5;
+  }
+}
+
+.field {
+  padding-bottom: 20px;
+}
+.field input {
+  border-radius: 3px;
+  border: 1px solid #bebebe;
+  font-size: 15px;
+  padding: 8px;
+  width: 100%;
+}
 .field textarea {
-  width: 620px;
-  height: 200px;
+  border-radius: 3px;
+  border: 1px solid #bebebe;
+  font-size: 15px;
+  padding: 8px;
+  width: 100%;
+  min-height: 300px;
+}
+.field textarea:focus {
+  border: 1px solid #3F51B5;
+  outline: 0px none transparent;
+}
+.field input:focus {
+  border: 1px solid #3F51B5;
+  outline: 0px none transparent;
+}
+.field label {
+  font-family: 'Rubik', Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+.title-top {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.actions input {
+  font-family: 'Rubik', Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: 500px;
+  background-color: #F4F4F4;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: #3F51B5;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.actions input:hover {
+  background-color: #3F51B5;
+  color: #fff;
 }
