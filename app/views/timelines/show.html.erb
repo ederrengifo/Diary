@@ -7,7 +7,7 @@
 
 <p>
   <strong>Content:</strong>
-  <%= @timeline.content %>
+  <%= simple_format(@timeline.content) %>
 </p>
 
 <%= link_to 'Edit', edit_timeline_path(@timeline) %> |

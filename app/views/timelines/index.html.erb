@@ -10,7 +10,7 @@
     <div class="time">Creado el <%= timeline.created_at.in_time_zone('Lima').strftime("%d-%m-%Y a las %H:%M") %></div>
     <div class="title"><%= timeline.title %></div>
   </div>
-  <div class="entrie-content"><%= timeline.content %></div>
+  <div class="entrie-content"><%= simple_format(timeline.content, class: 'entrie-content') %></div>
 </div>
 
 <% end %>
