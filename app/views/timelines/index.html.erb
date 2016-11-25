@@ -13,7 +13,17 @@
   <div class="entrie-content"><%= simple_format(timeline.content, class: 'entrie-content') %></div>
 </div>
 
-
+<div class="comment-container">
+  <div class="comment-input">
+    <%= render 'comments/form_comment', comment: Comment.new(timeline: timeline) %>
+  </div>
+  <% timeline.comments.each do |comment| %>
+  <div class="comment-entrie">
+    <div class="comment-head"><%= comment.user.name %> <span> - <%= comment.created_at.in_time_zone('Lima').strftime("%d-%m-%Y a las %H:%M")%> - </span><%= link_to 'Borrar', timeline_comment_path(timeline, comment), method: :delete %></div>
+    <div class="comment-content"><%= comment.comment_content %></div>
+  </div>
+  <% end %>
+</div>
 
 
 <% end %>
