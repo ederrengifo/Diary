@@ -13,12 +13,7 @@
   <div class="entrie-content"><%= simple_format(timeline.content, class: 'entrie-content') %></div>
 </div>
 
-<div class="comment-container">
-  <div class="comment-input">
-    <%= render 'comments/form_comment', comment: Comment.new(timeline: timeline) %>
-  </div>
-  
-</div>
+
 
 
 <% end %>
