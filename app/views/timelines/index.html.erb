@@ -15,7 +15,7 @@
 
 <div class="comment-container">
   <div class="comment-input">
-    <%= render 'comments/form_comment', comment: timeline.build_comment %>
+    <%= render 'comments/form_comment', comment: Comment.new(timeline: timeline) %>
   </div>
   <% timeline.comments.each do |comment| %>
   <div class="comment-entrie">
