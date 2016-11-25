@@ -48,3 +48,6 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'material_icons'
+
+gem 'omniauth'
+gem 'omniauth-facebook', '1.4.0'

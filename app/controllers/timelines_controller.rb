@@ -1,5 +1,5 @@
 class TimelinesController < ApplicationController
-  before_action :set_timeline, only: [:show, :edit, :update, :destroy, :noPassword]
+  before_action :set_timeline, only: [:show, :edit, :update, :destroy, :remove, :noPassword]
 
   # GET /timelines
   # GET /timelines.json
@@ -64,6 +64,15 @@ class TimelinesController < ApplicationController
     end
   end
 
+  def remove
+    @timeline = Timeline.destroy(timeline_params[:comment])
+    respond_to do |format|
+      format.html { redirect_to @timeline, notice: 'Comment deleted'}
+      format.json { head :no_content}
+    end
+  end
+
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_timeline
@@ -72,6 +81,6 @@ class TimelinesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def timeline_params
-      params.require(:timeline).permit(:title, :content, :created_at)
+      params.require(:timeline).permit(:title, :content, :created_at, :user_id, :comments)
     end
 end

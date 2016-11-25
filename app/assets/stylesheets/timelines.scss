@@ -27,6 +27,14 @@ p {
   text-align: left;
 }
 
+.header-user {
+  text-align: left;
+  font-family: 'Rubik', Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  padding-bottom: 30px;
+}
+
 .main-title {
   font-family: 'Rubik', Helvetica, sans-serif;
   font-weight: 400;
@@ -36,9 +44,9 @@ p {
 }
 
 .entrie {
-  border-top: 1px solid #f4f4f4;
+  border-top: 1px solid #E0E0E0;
   padding-top: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
 }
 
 .entrie-head {
@@ -149,4 +157,77 @@ p {
 .actions input:hover {
   background-color: #3F51B5;
   color: #fff;
+}
+
+// Comments styles
+
+.comment-container {
+  width: 100%;
+  padding-bottom: 20px;
+}
+  .comment-input {
+    width: 100%;
+    font-family: 'Rubik', Helvetica, sans-serif;
+    input {
+      font-size: 15px;
+      padding: 10px;
+      width: 100%;
+      margin-bottom: 20px;
+      border: none;
+    }
+    input:hover {
+      border-bottom: 1px solid #F4F4F4;
+      outline: 0px none transparent;
+    }
+    input:focus {
+      border-bottom: 1px solid #3F51B5;
+      outline: 0px none transparent;
+      .comment-submit {
+        display: block;
+      }
+    }
+  }
+  .comment-entrie {
+    width: 100%;
+    background-color: #F6F6F6;
+    padding: 15px;
+    margin-bottom: 5px;
+    font-size: 14px;
+  }
+  .comment-head {
+    font-family: 'Rubik', Helvetica, sans-serif;
+    font-weight: 500;
+    padding-bottom: 3px;
+    span {
+      font-weight: normal;
+      color: #999;
+    }
+    a {
+      color: #999;
+      font-weight: 400;
+    }
+    a:hover {
+      color: #444;
+      text-decoration: underline;
+    }
+  }
+  .comment-content {
+    font-family: 'Rubik', Helvetica, sans-serif;
+    font-size: 15px;
+    color: #444;
+    font-weight: 300;
+  }
+.comment-submit {
+  display: none;
+}
+
+.comment-submit input {
+  background-color: #FFF;
+  text-align: left;
+  color: #3F51B5;
+  padding: 0;
+  cursor: pointer;
+}
+.comment-submit input:hover {
+  text-decoration: underline;
 }
