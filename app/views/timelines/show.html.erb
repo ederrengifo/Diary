@@ -10,19 +10,5 @@
 
 
 
-<div class="comment-container">
-
-    <%= render 'comments/form_comment', comment: Comment.new(timeline: @timeline) %>
-
-
-  <% @timeline.comments.each do |comment| %>
-  <div class="comment-entrie">
-    <div class="comment-head"><%= comment.user.name %> <span> - <%= comment.created_at.in_time_zone('Lima').strftime("%d-%m-%Y a las %H:%M")%></span></div>
-    <div class="comment-content"><%= comment.comment_content %></div>
-  </div>
-  <% end %>
-
-</div>
-
 <%= link_to 'Edit', edit_timeline_path(@timeline) %> |
 <%= link_to 'Back', timelines_path %>
