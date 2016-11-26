@@ -1,4 +1,6 @@
 
+<% if current_user %>
+
 <h1 class="main-title">Hoy dia...</h1>
 
 <div class="add-entrie"><%= link_to '+ Nueva Historia', new_timeline_path(@timeline) %></div>
@@ -30,3 +32,7 @@
 
 
 <br>
+
+<% else %>
+  <%= link_to "Logueate con tu cuenta de Facebook!", "/auth/facebook", id: "sign_in" %>
+<% end %>
