@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   resources :comments
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
-  get "/sign_in" => "sessions#new", as: "sign_in"
+  get "/signout" => "sessions#new", as: "sign_in"
 
   match 'auth/:provider/callback', to: 'sessions#create', via: [:get, :post]
   match 'auth/failure', to: redirect('/'), via: [:get, :post]
