@@ -8,12 +8,6 @@
   <div class="entrie-content"><%= simple_format(@timeline.content, class: 'entrie-content') %></div>
 </div>
 
-
-
-<%= link_to 'Edit', edit_timeline_path(@timeline) %> |
-<%= link_to 'Back', timelines_path %>
-<br>
-
 <div class="comment-container">
   <div class="comment-input">
     <%= render 'comments/form_comment', comment: Comment.new(timeline: @timeline) %>
