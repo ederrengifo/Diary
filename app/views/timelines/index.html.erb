@@ -10,7 +10,7 @@
 <div class="entrie">
   <div class="entrie-head">
     <div class="time">Creado el <%= timeline.created_at.in_time_zone('Lima').strftime("%d-%m-%Y a las %H:%M")%> por <%= timeline.user.name %></div>
-    <div class="title" href="<%= timelines_path(timeline) %>"><%= timeline.title %></div>
+    <div class="title"><a href="<%= timelines_path(timeline) %>"><%= timeline.title %></a></div>
   </div>
   <div class="entrie-content"><%= simple_format(timeline.content, class: 'entrie-content') %></div>
 </div>
