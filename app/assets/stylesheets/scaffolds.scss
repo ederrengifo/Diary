@@ -64,6 +64,9 @@ input:focus, textarea:focus {
 .hide {
   display: none !important;
 }
+.footer {
+  margin: 30px 0 60px 0;
+}
 
 /* Login */
 
@@ -248,7 +251,7 @@ div.center-column {
 
 .actions input {
   color: $blue;
-  background-color: #FFF;
+  background-color: $light-gray;
   font-family: $rubik;
   text-align: center;
   border: 1px solid $blue;
