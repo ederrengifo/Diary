@@ -23,8 +23,11 @@
     var value = this.value;
     if (value && value.length > 0) {
       document.getElementById("submit-<%= comment.timeline.id %>").classList.add("show")
+      document.getElementById("submit-<%= comment.timeline.id %>").classList.remove("hide")
+
     } else {
       document.getElementById("submit-<%= comment.timeline.id %>").classList.remove("show")
+      document.getElementById("submit-<%= comment.timeline.id %>").classList.add("hide")
     }
   }
 

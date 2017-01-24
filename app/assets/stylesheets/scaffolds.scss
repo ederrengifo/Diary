@@ -51,11 +51,14 @@ input, textarea {
   box-sizing: border-box;
 }
 input:focus, textarea:focus {
-  border: 1px solid $blue;
+  border: 0px;
   outline: none;
 }
 .show {
-  display: block;
+  display: block !important;
+}
+.hide {
+  display: none !important;
 }
 
 /* Login */
@@ -210,9 +213,6 @@ div.center-column {
 
 /* Forms */
 
-.comment-submit {
-  display: none;
-}
 
 .comment-submit input {
   color: #FFF;
