@@ -252,8 +252,9 @@ div.center-column {
   font-family: $rubik;
   text-align: center;
   border: 1px solid $blue;
+  cursor: pointer;
 }
-.comment-submit input:hover {
+.actions input:hover {
   color: #FFF;
   background-color: $blue;
   border: 1px solid $blue;
