@@ -11,20 +11,20 @@
   <% end %>
 <div class="comment-input">
   <%= f.hidden_field :user_id, value: current_user.id %>
-  <div id="myComment-<%= @timeline.id %>"><%= f.text_field :comment_content, placeholder: "Insertar comentario", class:"textfield" %></div>
-  <div class="comment-submit" id="submit-<%= @timeline.id %>">
+  <div id="myComment-<%= @timelines.id %>"><%= f.text_field :comment_content, placeholder: "Insertar comentario", class:"textfield" %></div>
+  <div class="comment-submit" id="submit-<%= @timelines.id %>">
     <%= f.submit 'Add' %>
   </div>
 </div>
 <script>
-  var inputComment = document.getElementById("myComment-<%= @timeline.id %>").getElementsByClassName("textfield")[0];
+  var inputComment = document.getElementById("myComment-<%= @timelines.id %>").getElementsByClassName("textfield")[0];
 
   inputComment.onkeyup = function() {
     var value = this.value;
     if (value && value.length > 0) {
-      document.getElementById("submit-<%= @timeline.id %>").classList.add("show")
+      document.getElementById("submit-<%= @timelines.id %>").classList.add("show")
     } else {
-      document.getElementById("submit-<%= @timeline.id %>").classList.remove("show")
+      document.getElementById("submit-<%= @timelines.id %>").classList.remove("show")
     }
   }
 
