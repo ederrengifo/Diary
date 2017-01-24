@@ -43,16 +43,19 @@ input, textarea {
   font-size: 17px;
   line-height: 28px;
   color: #000;
-  border: 0;
+  border:0;
+  border-top: 1px solid #FFF;
   font-family: $lora;
   padding: 13px 40px;
   margin: 0px;
   width: 100%;
   box-sizing: border-box;
+  overflow: hidden;
 }
 input:focus, textarea:focus {
   border: 0px;
   outline: none;
+  border-top: 1px solid $blue;
 }
 .show {
   display: block !important;
