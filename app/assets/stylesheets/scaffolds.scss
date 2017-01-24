@@ -218,12 +218,13 @@ div.center-column {
 }
 
 .comment-submit input {
-  color: #FFF;
-  background-color: $blue;
+  color: $blue;
+  background-color: #FFF;
   font-family: $rubik;
+  text-align: left;
 }
 .comment-submit input:hover {
-  color: #FFF;
+  color: $blue;
+  background-color: #FFF;
   text-decoration: underline;
-  margin-top: 10px;
 }
