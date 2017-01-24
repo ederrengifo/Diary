@@ -43,7 +43,7 @@
     };
   }
   function init () {
-    var text = document.getElementById("myComment-<%= comment.timeline.id %>");
+    var text = document.getElementById("myComment-<%= comment.timeline.id %>").getElementsByClassName("textfield")[0];;
     function resize () {
         text.style.height = 'auto';
         text.style.height = text.scrollHeight+'px';
