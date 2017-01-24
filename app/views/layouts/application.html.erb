@@ -29,7 +29,7 @@
 
       <div class="right-column">
         <div class="user-content">
-          Hello <span><%= current_user.name %></span>! This is your space to release your inner writter. Do you want to <%= link_to "Salir?", signout_path %> ?
+          Hello <span><%= current_user.name %></span>! This is your space to release your inner writter. Do you want to <%= link_to "exit", signout_path %> ?
         </div>
         <div class="new-story">
           <%= link_to '+ New Story', new_timeline_path(@timeline) %>
