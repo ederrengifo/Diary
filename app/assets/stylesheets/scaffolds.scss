@@ -89,7 +89,7 @@ div.center-column {
 .user-content {
   font-family: $rubik;
   font-size: 14px;
-  color: #999;
+  color: #555;
   text-align: left;
   line-height: 22px;
 }
@@ -113,6 +113,7 @@ div.center-column {
   font-size: 16px;
   color: #000;
   font-weight: 500;
+  float: left;
 }
 .new-story a:hover {
   color: $blue;
@@ -121,7 +122,6 @@ div.center-column {
 
 .entrie {
   width: auto;
-  background-color: #FFF;
   padding: 70px;
   margin-bottom: 2px;
   text-align: center;
@@ -129,9 +129,10 @@ div.center-column {
 }
 .story {
   text-align: left;
+  background-color: #FFF;
 }
 .story-head {
-  text-align: center;
+  text-align: left;
   font-size: 16px;
   color: #555;
 }
@@ -147,12 +148,14 @@ div.center-column {
 
 .input-comment {
   width: auto;
+  text-align: left;
   background-color: #FFF;
   margin-bottom: 2px;
 }
 
 .comment-entrie {
   width: auto;
+  text-align: left;
   background-color: #FFF;
   margin-bottom: 2px;
 }

@@ -27,6 +27,13 @@
 
     <div class="page-container">
 
+      <div class="center-column" style="max-width: 740px;
+      margin: 0 auto;
+      min-width: 320px;
+      text-align: left;">
+        <%= yield %>
+      </div>
+
       <div class="right-column">
         <div class="user-content">
           Hello <span><%= current_user.name %></span>! This is your space to release your inner writter. Do you want to <%= link_to "exit", signout_path %> ?
@@ -34,13 +41,6 @@
         <div class="new-story">
           <%= link_to '+ New Story', new_timeline_path(@timeline) %>
         </div>
-      </div>
-
-      <div class="center-column" style="max-width: 740px;
-      margin: 0 auto;
-      min-width: 320px;
-      text-align: left;">
-        <%= yield %>
       </div>
 
   <% else %>
