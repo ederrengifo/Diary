@@ -9,9 +9,9 @@
       </ul>
     </div>
   <% end %>
-<div class="comment-input" id="myComment">
+<div class="comment-input">
   <%= f.hidden_field :user_id, value: current_user.id %>
-  <%= f.text_field :comment_content, placeholder: "Insertar comentario", class:"textfield" %>
+  <div id="myComment"><%= f.text_field :comment_content, placeholder: "Insertar comentario", class:"textfield" %></div>
   <div class="comment-submit" id="submit">
     <%= f.submit 'Add' %>
   </div>
@@ -27,6 +27,6 @@
       document.getElementById("submit").classList.remove("show")
     }
   }
-  
+
 </script>
 <% end %>

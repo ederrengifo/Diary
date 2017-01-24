@@ -47,9 +47,11 @@ input, textarea {
   font-family: $lora;
   padding: 30px 25px;
   margin: 0px;
+  width: 100%;
 }
-input:focus, input:hover, textarea:focus, textarea:focus {
+input:focus, textarea:focus {
   border: 1px solid $blue;
+  outline: none;
 }
 .show {
   display: block;
