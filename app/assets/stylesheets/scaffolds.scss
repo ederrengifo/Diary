@@ -45,7 +45,7 @@ input, textarea {
   color: #000;
   border: 0;
   font-family: $lora;
-  padding: 10px 40px;
+  padding: 13px 40px;
   margin: 0px;
   width: 100%;
   box-sizing: border-box;
@@ -210,12 +210,17 @@ div.center-column {
 
 /* Forms */
 
+.comment-submit {
+  display: none;
+}
+
 .comment-submit input {
-  display: block;
-  color: $blue;
+  color: #FFF;
+  background-color: $blue;
+  font-family: $rubik;
 }
 .comment-submit input:hover {
-  color: $blue;
+  color: #FFF;
   text-decoration: underline;
   margin-top: 10px;
 }
