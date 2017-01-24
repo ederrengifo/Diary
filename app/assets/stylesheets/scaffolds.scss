@@ -1,6 +1,7 @@
 /* General Styles */
 
 $rubik: 'Rubik', sans-serif;
+$lora: 'Lora', serif;
 $blue: #0020FF;
 $light-gray: #F8F8F8;
 
@@ -26,7 +27,7 @@ h1 {
   margin: 10px 0px 20px 0px;
 }
 p {
-  font-family: 'Lora', serif;
+  font-family: $lora;
   font-size: 18px;
   line-height: 34px;
 }
@@ -160,22 +161,29 @@ div.center-column {
 .comment-entrie {
   width: auto;
   text-align: left;
-  background-color: #FFF;
+  background-color: #FBFBFB;
   margin-bottom: 2px;
-  padding: 20px 70px;
+  padding: 30px 40px;
 }
 .comment-head {
   margin-bottom: 10px;
   font-family: $rubik;
   font-weight: 500;
+  font-size: 16px;
 }
 .comment-head span {
-  font-weight: 400;
+  font-weight: 300;
   color: #555;
 }
 .comment-head a {
   color: #999;
+  font-weight: 300;
 }
 .comment-head a:hover {
   color: #000;
+}
+.comment-content {
+  font-size: 16px;
+  line-height: 26px;
+  font-family: $lora;
 }
