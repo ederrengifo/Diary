@@ -6,7 +6,7 @@
       Created by <span><%= @timeline.user.name %></span> on <%= @timeline.created_at.in_time_zone('Lima').strftime("%d-%m-%Y a las %H:%M")%>
     </div>
     <div class="story-title">
-      <a href="<%= timeline_path(@timeline) %>"><h1><%= @timeline.title %></h1></a>
+      <h1><%= @timeline.title %></h1>
     </div>
     <div class="story-content">
       <p><%= simple_format(@timeline.content, {}, :sanitize => false)%></p>
