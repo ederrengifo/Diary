@@ -253,10 +253,11 @@ div.center-column {
   text-align: center;
   border: 1px solid $blue;
   cursor: pointer;
+  padding: 12px 0px;
 }
 .actions input:hover {
   color: #FFF;
   background-color: $blue;
   border: 1px solid $blue;
-  text-decoration: underline;
+  text-decoration: none;
 }
