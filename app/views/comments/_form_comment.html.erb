@@ -11,7 +11,7 @@
   <% end %>
 <div class="comment-input">
   <%= f.hidden_field :user_id, value: current_user.id %>
-  <div id="myComment-<%= comment.timeline.id %>"><%= f.text_field :comment_content, placeholder: "Insertar comentario", class:"textfield" %></div>
+  <div id="myComment-<%= comment.timeline.id %>"><%= f.text_field :comment_content, placeholder: "Insert comment", class:"textfield", rows:1 %></div>
   <div class="comment-submit" id="submit-<%= comment.timeline.id %>">
     <%= f.submit 'Add' %>
   </div>
