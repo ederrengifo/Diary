@@ -9,7 +9,7 @@
       <a href="<%= timeline_path(timeline) %>"><h1><%= @timeline.title %></h1></a>
     </div>
     <div class="story-content">
-      <%= truncate(@timeline.content, length: 300) {link_to 'Read more', timeline_path(@timeline)} %>
+      <%= truncate(@timeline.content, length: 300)%><%= link_to 'Read more', timeline_path(@timeline) %>
     </div>
   </div>
   <div class="input-comment">
