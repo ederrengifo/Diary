@@ -74,7 +74,7 @@ a:hover {
   margin: 0 auto;
   text-align: center;
 }
-.center-column {
+div.center-column {
   max-width: 740px;
   margin: 0 auto;
   min-width: 320px;
@@ -117,6 +117,8 @@ a:hover {
   background-color: #FFF;
   padding: 70px;
   margin-bottom: 2px;
+  text-align: center;
+  margin-top: 30px;
 }
 
 .input-comment {
