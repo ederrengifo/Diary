@@ -77,6 +77,8 @@ a:hover {
 .center-column {
   max-width: 740px;
   margin: 0 auto;
+  min-width: 320px;
+  text-align: left;
 }
 .right-column {
   position: fixed;
@@ -108,4 +110,23 @@ a:hover {
 .new-story a:hover {
   color: $blue;
   text-decoration: underline;
+}
+
+.entrie {
+  width: auto;
+  background-color: #FFF;
+  padding: 70px;
+  margin-bottom: 2px;
+}
+
+.input-comment {
+  width: auto;
+  background-color: #FFF;
+  margin-bottom: 2px;
+}
+
+.comment-entrie {
+  width: auto;
+  background-color: #FFF;
+  margin-bottom: 2px;
 }
