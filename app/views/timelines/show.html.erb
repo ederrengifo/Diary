@@ -6,7 +6,7 @@
       Created by <span><%= @timeline.user.name %></span> on <%= @timeline.created_at.in_time_zone('Lima').strftime("%d-%m-%Y a las %H:%M")%>
     </div>
     <div class="story-title">
-      <a href="<%= timeline_path(timeline) %>"><h1><%= @timeline.title %></h1></a>
+      <a href="<%= timeline_path(@timeline) %>"><h1><%= @timeline.title %></h1></a>
     </div>
     <div class="story-content">
       <p><%= truncate(@timeline.content, length: 300)%><%= link_to 'Read more', timeline_path(@timeline) %></p>
