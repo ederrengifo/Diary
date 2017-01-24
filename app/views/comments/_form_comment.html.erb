@@ -9,9 +9,24 @@
       </ul>
     </div>
   <% end %>
-<div class="comment-input">
+<div class="comment-input" id="myComment">
   <%= f.hidden_field :user_id, value: current_user.id %>
-  <%= f.text_field :comment_content, placeholder: "Insertar comentario" %>
-  <div class="comment-submit"><%= f.submit 'Add' %></div>
+  <%= f.text_field :comment_content, placeholder: "Insertar comentario", class:"textfield" %>
+  <div class="comment-submit" id="submit">
+    <%= f.submit 'Add' %>
+  </div>
 </div>
+<script>
+  var inputComment = document.getElementById("myComment").getElementsByClassName("textfield")[0];
+
+  inputComment.onkeyup = function() {
+    var value = this.value;
+    if (value && value.length > 0) {
+      document.getElementById("submit").classList.add("show")
+    } else {
+      document.getElementById("submit").classList.remove("show")
+    }
+  }
+  
+</script>
 <% end %>
