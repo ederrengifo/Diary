@@ -85,7 +85,6 @@ div.center-column {
 .right-column {
   position: fixed;
   width: 155px;
-  right: 80px;
 }
 .user-content {
   font-family: $rubik;
@@ -131,6 +130,7 @@ div.center-column {
   text-align: left;
   background-color: #FFF;
   padding: 70px;
+  margin-bottom: 2px;
 }
 .story-head {
   text-align: left;
@@ -162,4 +162,20 @@ div.center-column {
   text-align: left;
   background-color: #FFF;
   margin-bottom: 2px;
+  padding: 20px 70px;
+}
+.comment-head {
+  margin-bottom: 10px;
+  font-family: $rubik;
+  font-weight: 500;
+}
+.comment-head span {
+  font-weight: 400;
+  color: #555;
+}
+.comment-head a {
+  color: #999;
+}
+.comment-head a:hover {
+  color: #000;
 }
