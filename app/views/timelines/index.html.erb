@@ -14,10 +14,11 @@
           <p><%= truncate(timeline.content, length: 400) %> <%= link_to 'Read more', timeline_path(timeline) %></p>
         </div>
       </div>
+      <!--
       <div class="input-comment">
         <%= render 'comments/form_comment', comment: Comment.new(timeline: timeline) %>
       </div>
-      <!--
+
       <% timeline.comments.each do |comment| %>
       <div class="comment-entrie">
         <div class="comment-head">
